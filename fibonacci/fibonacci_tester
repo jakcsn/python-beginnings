@@ -4,7 +4,7 @@ a2=1
 a3=1
 try:
     num_to_check = int(input("What number would you determine is or isn't in the fibonacci sequence? "))
-except:
+except ValueError:
     print("\nThat is not a valid input")
     sys.exit()
 while num_to_check > a3:
