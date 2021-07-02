@@ -1,0 +1,18 @@
+import sys
+a1=0
+a2=1
+a3=1
+try:
+    num_to_check = int(input("What number would you determine is or isn't in the fibonacci sequence? "))
+except:
+    print("\nThat is not a valid input")
+    sys.exit()
+while num_to_check > a3:
+    if (a3 != num_to_check):
+            a1 = a2
+            a2 = a3
+            a3 = a1 + a2  
+if (a3 == num_to_check):
+    print(num_to_check, "is in the Fibbonacci Sequence")
+else:
+    print(num_to_check, "is not in the Fibbonacci Sequence")
