@@ -3,7 +3,7 @@ a1=0
 a2=1
 a3=1
 try:
-    num_to_check = int(input("What number would you determine is or isn't in the fibonacci sequence? "))
+    num_to_check = int(input("What number would you like to determine is or isn't in the fibonacci sequence? "))
 except ValueError:
     print("That is not a valid input")
     sys.exit()
